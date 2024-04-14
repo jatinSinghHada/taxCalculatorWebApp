@@ -1,0 +1,246 @@
+.form-container {
+    position: relative;
+    max-width: 500px;
+    margin-top: 80px;
+    margin-left: 370px;
+    padding: 20px;
+    border: 1px solid #cccccc87;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for submit button */
+.btn-primary {
+    width: 100%;
+    background-color: rgb(138, 43, 226);
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    padding: 10px 20px;
+    /* Button padding */
+    border: none;
+    /* Remove button border */
+    border-radius: 5px;
+    /* Apply button border-radius */
+}
+
+.btn-primary:hover {
+    background-color: rgb(138, 43, 226);
+    /* Same as normal state */
+    /* Add any additional styles for hover state */
+}
+
+
+/* .result {
+    max-width: 700px;
+    height: 350px;
+    margin-top: 90px;
+    margin-left: 250px;
+    padding: 20px;
+    border: 1px solid #cccccc87;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: azure;
+}*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* Hide popup by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup.active {
+    display: flex;
+    /* Display popup when active */
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+}
+
+.popup .content {
+    position: relative;
+    background: #fff;
+    width: 450px;
+    height: 300px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    /* Center the text */
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    flex-direction: column;
+    z-index: 9999;
+    /* Set a high z-index value to ensure popup is on top */
+}
+
+.popup #popupMessage {
+    margin-bottom: 20px;
+    /* Add spacing between lines */
+}
+
+.popup #popupMessage .big {
+    font-size: 24px;
+    /* Adjust font size for "Your overall income will be" */
+    display: block;
+}
+
+.popup #popupMessage .smaller {
+    font-size: 28px;
+    /* Adjust font size for the numeric value */
+}
+
+
+.popup #popupMessage .small {
+    font-size: 12px;
+    /* Adjust font size for "after tax deduction" */
+    display: block;
+}
+
+
+.popup .close-btn {
+    cursor: pointer;
+    background-color: rgb(138, 43, 226);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.question-mark-container {
+    position: absolute;
+    top: 22px;
+    left: calc(41% + 14px);
+    /* Position next to the input field */
+    display: inline-block;
+}
+
+.question-mark {
+    width: 20px;
+    /* Adjust size as needed */
+    height: 20px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.message-box {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    /* Position below the question mark */
+    left: 0;
+    background-color: rgb(128, 128, 128);
+    font-size: 10px;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(241, 10, 10, 0.1);
+    width: 110px;
+    transition: display 0.4s;
+}
+
+.question-mark-container:hover .message-box {
+    display: block;
+}
+
+.question-mark-container2 {
+    position: absolute;
+    top: 107px;
+    left: calc(30% + 14px);
+    /* Position next to the input field */
+    display: inline-block;
+}
+
+.question-mark-container2:hover .message-box {
+    display: block;
+}
+
+.question-mark-container3 {
+    /* question mark conatiner for age group*/
+    position: absolute;
+    top: 191px;
+    left: calc(25% + 24px);
+    /* Position next to the input field */
+    display: inline-block;
+}
+
+.question-mark-container3:hover .message-box {
+    display: block;
+}
+
+.question-mark-container4 {
+    position: absolute;
+    top: 255px;
+    left: calc(41% + 19px);
+    /* Position next to the input field */
+    display: inline-block;
+}
+
+.question-mark-container4:hover .message-box {
+    display: block;
+}
+
+.error-icon {
+    visibility: hidden;
+    position: absolute;
+    top: 49px;
+    transform: translateY(-50%);
+    /* Center the icon vertically */
+    right: 10px;
+    color: #e74c3c;
+    font-size: 16px;
+    /* Adjust font size as needed */
+}
+
+/* Tooltip message box */
+.tooltip {
+    position: absolute;
+    top: -30px; /* Adjust position as needed */
+    right: 0;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    visibility: hidden; /* Initially hidden */
+}
+
+/* Show tooltip message box on hover */
+.error-icon:hover + .tooltip {
+    visibility: visible;
+}
+
+.error-icon[title] {
+    cursor: default;
+    /* Display help cursor on hover */
+}
