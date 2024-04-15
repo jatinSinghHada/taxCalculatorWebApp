@@ -21,3 +21,5 @@ Technologies Used: HTML, CSS, JavaScript, Bootstrap.
 
 Author
 Jatin Singh Hada
+
+![Screenshot of Tax Calculator Web App](https://github.com/jatinSinghHada/taxCalculatorWebApp/raw/assets/114403539/e2ae944b-5bbc-4745-aec5-8a2fb2709018)
