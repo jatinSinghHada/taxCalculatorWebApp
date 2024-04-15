@@ -10,9 +10,9 @@ Navigate to the project directory:cd taxCalculatorWebApp
 Open the index.html file in your web browser.
 
 Project Structure: 
-a. index.html: Main HTML file containing the form and popup elements.
-b. style.css: CSS file for styling the HTML elements.
-c. script.js: JavaScript file for handling form submission and calculations.
+1. index.html: Main HTML file containing the form and popup elements.
+2. style.css: CSS file for styling the HTML elements.
+3. script.js: JavaScript file for handling form submission and calculations.
 
 README.md: This file providing instructions and information about the project.
 
