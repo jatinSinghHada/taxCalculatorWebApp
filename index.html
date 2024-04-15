@@ -19,22 +19,24 @@
             <div class="mb-3">
                 <div class="mb-3 position-relative error">
                     <label for="number1" class="form-label">Enter gross annual income</label>
-                    <input type="text" class="form-control number-input" id="number1" placeholder="Enter gross annual income" aria-describedby="emailHelp">
+                    <input type="text" class="form-control number-input" id="number1"
+                        placeholder="Enter gross annual income" aria-describedby="emailHelp">
                     <span class="error-icon" title="Please enter numbers only">!</span>
                     <div class="tooltip">Gross annual income is your total salary in a year before any deductions.</div>
                 </div>
-                
+
                 <div class="question-mark-container">
                     <div class="question-mark">?</div>
-                    <div class="message-box">Gross annual income is your total salary in a year before any deductions.</div>
+                    <div class="message-box">Gross annual income is your total salary in a year before any deductions.
+                    </div>
                 </div>
             </div>
 
             <div class="mb-3">
                 <div class="mb-3 position-relative error">
-                <label for="number2" class="form-label">Enter extra income</label>
-                <input type="text" class="form-control number-input" id="number2"
-                    placeholder="Enter extra income from other sources" aria-describedby="emailHelp">
+                    <label for="number2" class="form-label">Enter extra income</label>
+                    <input type="text" class="form-control number-input" id="number2"
+                        placeholder="Enter extra income from other sources" aria-describedby="emailHelp">
                     <span class="error-icon" title="Please enter numbers only">!</span>
                 </div>
                 <div class="question-mark-container2">
@@ -43,27 +45,34 @@
                         primary job.</div>
                 </div>
             </div>
+
             <!-- Enter age group -->
 
-            <div class="box">
-                <div class="form-group">
-                    <label for="age">Enter age group</label>
-                    <input type="number" class="form-control" id="ageInput" required>
-                    <i class="fas fa-exclamation-circle error-icon" id="ageError" data-toggle="tooltip" title=""></i>
-                    <div class="question-mark-container3">
-                        <div class="question-mark">?</div>
-                        <div class="message-box">Please enter your age group.</div>
-                    </div>
+            <div class="form-control">
+                <label for="age">Select age group</label>
+                <select id="ageInput" class="form-select">
+                    <option value="" selected disabled></option>
+                    <option value="<40">&lt; 40</option>
+                    <option value=">=40&<60">&ge; 40 &lt; 60</option>
+                    <option value=">=60">&ge; 60</option>
+                </select>
+
+                <span class="error-icon2" title="Selecting an age group is mandatory.">*</span>
+
+                <div class="question-mark-container3">
+                    <div class="question-mark">?</div>
+                    <div class="message-box">Please select your age group.</div>
                 </div>
             </div>
 
 
             <div class="mb-3">
                 <div class="mb-3 position-relative error">
-                <label for="number3" class="form-label">Total applicable deductions</label>
-                <input type="text" class="form-control number-input" id="number3" placeholder="Enter total applicable deductions">
-                <span class="error-icon" title="Please enter numbers only">!</span>
-            </div>
+                    <label for="number3" class="form-label">Total applicable deductions</label>
+                    <input type="text" class="form-control number-input" id="number3"
+                        placeholder="Enter total applicable deductions">
+                    <span class="error-icon" title="Please enter numbers only">!</span>
+                </div>
                 <div class="question-mark-container4">
                     <div class="question-mark">?</div>
                     <div class="message-box">Total applicable deductions include any deductions you are eligible for,
